@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!--Site se adequa a tela do dispositivo do usuario--> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>SeuLugarAqui</title>
+		<meta name="description" content="SeuLugarAqui - Melhor site para encontrar lugares">
+		<meta name="robots" content="index">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,300,700" rel="stylesheet" type="text/css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+	</head>
+	<body>
+		<!--tag especifica para cabeçalho-->
+		<header class="header container">
+			<a href="index.html" class="logo">SeuLugarAqui</a>
+			<button class="btLogin">Login</button>
+			<form action="" method="post">
+				<ul class="logar register">
+					<buttom class="btCloseLogin btClose" href="#"><i class="fa fa-times"></i></buttom>
+						
+					<li class="textLogin">Login:</li>
+					<li><input type="text" name="email" placeholder="Email"></li>
+								
+					<li><input type="password" name="senha" placeholder="Senha"></li>
+					<li><button class="btLogarInterno"><a href="main.html">Entrar</a></button></li>
+				</ul>
+			</form>
+			<form action="" method="post">
+				<ul class="menuTelaMaior">
+					<li> </li>
+						<input type="text" name="" placeholder="Email">
+					<li></li>
+						<input type="password" name="" placeholder="Senha">
+					<li><button class="btLogar"><a href="main.html">Entrar</a></button></li>
+				</ul>
+			</form>
+			
+		</header>
+		<!--final cabeçalho-->
+
+		<!--tag especifica para conteudo principal-->
+		<main class="conteudoPrincipal container" >
+			<div class="conteudo">
+					<div class="title">
+						<h3>Chegamos</h3>
+						<h1>Seremos seu guia de eventos na cidade</h1>
+						<h2>Aqui você pode encontrar todos os eventos da cidade</h2>
+						<h2>Faça seu cadastro</h2>
+					</div>
+
+					<div class="buttons">
+						<button class="btCadastro btUser bgRed">Usuário <i class="fa fa-arrow-circle-right"></i></button>
+						<button class="btCadastro btCompany bgRed">Empresa <i class="fa fa-arrow-circle-right"></i></button>
+						<form>	
+							<ul class="registerUser register">
+								<buttom class="btCloseUser btClose" href="#"><i class="fa fa-times"></i></buttom>
+							
+								<li class="textCadastrar">Cadastrar:</li>
+								<li><input type="text" name="nome" placeholder="Nome Completo"></li>
+								<li><input type="text" name="email" placeholder="Email"></li>
+								<li><input type="text" name="telefone" placeholder="Telefone"></li>
+								<li><input type="password" name="senha" placeholder="Senha"></li>
+								<li><button class="btLogarInterno"><a href="main.html">Cadastrar</a></button></li>
+
+							</ul>
+						</form>
+						<form action="" method="post">	
+							<ul class="registerCompany register">
+								<buttom class="btCloseCompany btClose" href="#"><i class="fa fa-times"></i></buttom>
+							
+								<li>Email:</li>
+									<input type="text" name="email">
+									
+								<li>Senha:</li>
+									<input type="password" name="senha">
+
+							</ul>
+						</form>	
+					</div>
+				</div>		
+		</main>
+		<!--final principal-->
+
+		<!--tag especifica para rodape-->
+		<footer class="rodape container ">
+			<div class="socialIcons">
+				<a href=""><i class="fa fa-facebook"></i></a>
+				<a href=""><i class="fa fa-twitter"></i></a>
+				<a href=""><i class="fa fa-instagram"></i></a>
+			</div>
+		</footer>
+
+		<script>
+			$(".btLogin").click(function(){
+				$(".logar").show();
+			})
+
+			$(".btCloseLogin").click(function(){
+				$(".logar").hide();
+			})
+		</script>
+		<script>
+			$(".btUser").click(function(){
+				$(".registerUser").show();
+			})
+
+			$(".btCloseUser").click(function(){
+				$(".registerUser").hide();
+			})
+		</script>
+		<script>
+			$(".btCompany").click(function(){
+				$(".registerCompany").show();
+			})
+
+			$(".btCloseCompany").click(function(){
+				$(".registerCompany").hide();
+			})
+		</script>
+
+	</body>
+</html

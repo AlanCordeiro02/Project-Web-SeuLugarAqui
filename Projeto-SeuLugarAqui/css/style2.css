@@ -1,0 +1,211 @@
+/*reset da pagina*/
+*{
+	margin: 0px; /*tirando tudo e qualquer margem inicial do projeto*/
+	padding: 0px; /*tirando os espaços internos da pagina do navegador*/
+	font-size: 100%; /*aproveitando o maximo da fonte*/
+	border: none; /*tirando bordas de algumas tags que já vem direto*/
+	outline: none; /*tirando bordas dos formularios, campos de texto*/
+	box-sizing: border-box; /*quando damos um padding para alguma div, sessao, o padding faz com que essa div, sessao aumente de tamanho, com esse parametro nos evitamos*/
+	font-family: "lato";
+}
+
+body{
+	background-color: rgba(0,0,0, .9);
+
+}
+
+a {
+	text-decoration: none;
+}
+
+li{
+	list-style: none;
+}
+
+img{
+	max-width: 100%;
+}
+input{
+	border-radius: 4px;
+}
+
+/*configuração padrão*/
+
+.container{
+	width: 100%;
+	float: left;
+	padding: 3% 4%; /* espaços internos 3% para top e bottom e 4% para laterais*/
+	text-align: center;
+}
+
+.bgGradient{
+	background: linear-gradient(to right, #00BFFF, #87CEEB);
+}
+
+.bgBlack{
+	background-color: #000;
+}
+
+.bgGray{
+	background-color: #CCC;
+}
+
+.bgWhite{
+	background-color: #FFF;
+}
+
+.radius{
+	border-radius: 10px;
+}
+
+/*cabeçalho*/
+
+.logo{
+	font-size:1.8em;
+	color: white;
+	float: left;
+	padding: 0% 0%;	 
+	font-family: 'Roboto Mono';
+}
+
+.btMenu{
+	height: 43px;
+	width: 43px;
+	float: right;
+	border-radius: 43px;
+	background-color: #FFF;
+	cursor: pointer;
+	text-align: center;
+	font-size: 1.5em;
+	display: ;
+
+}
+
+.btClose{
+	float: right;
+	color: #FFF;
+	font-size: 1.5em;
+	cursor: pointer;
+	margin: 2% 3% 0% 0%; /*top right bottom left*/
+}
+
+.menu{
+	width: 100%;
+	height: 100%;
+	color: #FFF;
+	position: fixed;
+	background-color: rgba(0,0,0);
+	top: 0;
+	left: 0;
+	display: none;
+
+}
+
+
+.menu ul{
+	float: left;
+	width: 100%;
+}
+
+.menu li{
+	font-size: 1.2em;
+	margin: 10% 0 0 0;
+	padding: 1% 0;
+}
+
+.menu li a{
+	color:#FFF;
+}
+
+.menu .textCadastro{
+	font-size: 1.5em;
+
+}
+
+.menu .textUserCompany{
+	font-size: 1em;
+	margin-top: 1%;
+}
+
+.menu .textLogin{
+	font-size: 1.5em;
+	cursor: pointer;
+}
+
+.menu .textMenu{
+	font-size: 1.5em;
+	margin-top: 1%;
+}
+
+/*conteudo principal*/
+.conteudoPrincipal{
+	background: url(../imagens/banner.png) center center no-repeat fixed;
+
+}
+
+.conteudoPrincipal input{
+	margin-bottom: 5%;
+}
+
+.iconSearch{
+	color: #FFF;
+}
+
+.conteudo{
+	width: 100%;
+	text-align: left ;
+	margin-bottom: 3%;
+}
+
+.conteudo img{
+	border-radius: 10px 10px 10px 10px;
+}
+
+
+.conteudo .text{
+	padding: 7%;
+}
+
+.conteudo .text h3{
+	font-size: 2em;
+	color: #000;
+	font-weight: bold;
+}
+
+.conteudo .text h4{
+	font-size: 1.5em;
+	color: #000;
+	margin-top: 1%; 
+}
+
+.conteudo .text p{
+	font-size: 1em;
+	color: #000;
+	margin-top: 8%;
+	line-height: 20px; /*distancia entre linhas*/ 
+}
+
+
+/*rodape*/
+
+
+
+.socialIcons{
+	width: 100%;
+}
+
+.socialIcons a{
+	font-size: 1.7em;
+	color: #FFF;
+	margin-right: 3%;
+	opacity: 0.7;
+}
+
+/*retirando a margem de 3% do ultimo link*/
+.socialIcons a:last-child{
+	margin-right: 0;
+}
+
+.socialIcons a:hover{
+	opacity: 1;
+}

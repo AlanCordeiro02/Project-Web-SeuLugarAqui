@@ -1,0 +1,384 @@
+/*reset da pagina*/
+*{
+	margin: 0px; /*tirando tudo e qualquer margem inicial do projeto*/
+	padding: 0px; /*tirando os espaços internos da pagina do navegador*/
+	font-size: 100%; /*aproveitando o maximo da fonte*/
+	border: none; /*tirando bordas de algumas tags que já vem direto*/
+	outline: none; /*tirando bordas dos formularios, campos de texto*/
+	box-sizing: border-box; /*quando damos um padding para alguma div, sessao, o padding faz com que essa div, sessao aumente de tamanho, com esse parametro nos evitamos*/
+	font-family: "lato";
+}
+
+body{
+	background: url(../imagens/Fundo3.jpg) center center no-repeat fixed;
+	background-size: cover;	
+
+}
+
+a {
+	text-decoration: none;
+}
+
+li{
+	list-style: none;
+}
+
+img{
+	max-width: 100%;
+}
+input{
+	border-radius: 4px;
+}
+
+/*configuração padrão*/
+
+.container{
+	width: 100%;
+	float: left;
+	padding: 3% 4%; /* espaços internos 3% para top e bottom e 4% para laterais*/
+	text-align: center;
+	background-color: rgba(0,0,0, .9);
+
+}
+
+.bgGradient{
+	background: linear-gradient(to right, #00BFFF, #87CEEB);
+}
+
+.bgBlack{
+	background-color: #000;
+}
+
+.bgGray{
+	background-color: #CCC;
+}
+
+.bgWhite{
+	background-color: #FFF;
+}
+
+.bgRed{
+	background-color: #FF0000;
+}
+
+.radius{
+	border-radius: 10px;
+}
+
+/*cabeçalho*/
+.logo{
+	font-size:1.8em;
+	color: white;
+	float: left;
+	padding: 0% 0%;	 
+}
+
+
+.btLogin{
+	float: right;
+	height: 30px;
+	width: 60px;
+	font-size: 1.5em;
+	border-radius: 4px;
+	background-color: #FF0000; 
+	color: #FFF;
+	margin-top: 1%;
+	display: ;
+}
+
+.menuTelaMaior{
+	width: 50%;
+	height: 100%;
+	color: #FFF;
+	padding: 0.5% 0%;
+	float: right;
+	display: none;
+
+
+}
+
+
+.menuTelaMaior input{
+	font-size: 1.2em;
+	width: 35%;
+
+}
+
+.menuTelaMaior li{
+	display: inline;
+	font-size: 1.2em;
+	padding: 0 1%;
+}
+
+.btLogar{
+	width: 62px;
+	border-radius: 4px;
+	background-color: #FF0000; 
+	cursor: pointer;
+} 
+
+.btLogarInterno{
+	width: 205px;
+	border-radius: 4px;
+	background-color: #FF0000; 
+	cursor: pointer;
+} 
+
+.menuTelaMaior a{
+	color: #FFF;
+}
+
+/*conteudo principal*/
+
+.conteudoPrincipal{
+	background-color: rgba(0,0,0, .9);	
+
+}
+
+.conteudo{
+	width: 100%;
+}
+
+.title{
+	width: 100%;
+	margin-bottom: 0%;
+}
+
+.conteudoPrincipal .title h3{
+	font-size: 1em;
+	color: #696969;
+	font-weight: bold; /*Peso em negrito. Equivalente a 700*/
+
+}
+
+.conteudoPrincipal .title h1{
+	font-size: 1.5em;
+	color: #FF0000; 
+	margin-top: 3%;
+	
+}
+
+.conteudoPrincipal .title h2{
+	font-size: 1.1em;
+	color: #FFF; 
+	margin-top: 3%;
+	
+}
+
+.buttons{
+	margin-top: 5%;
+	
+}
+
+.buttons i{
+	float: right;
+}
+
+.btCadastro{
+	width: 100%;
+	padding: 5%;
+	font-size: 1.2em;
+	border-radius: 10px;
+	cursor: pointer;
+	color: #FFF;
+	text-align: left;
+	margin-bottom: 2%;
+}
+
+.register{
+	width: 100%;
+	height: 100%;
+	color: #FFF;
+	position: fixed;
+	background-color: rgba(0,0,0, .9);
+	top: 0;
+	left: 0;
+	display: none;
+
+}
+
+.register input{
+	font-weight: 300px;
+}
+
+.register li{
+	font-size: 1.2em;
+	padding: 1% 0;
+}
+
+.register .textLogin{
+	margin-top: 10%;
+}
+
+.register a{
+	color: #FFF;
+}
+
+.registerUser .textCadastrar{
+	margin-top: 10%;
+}
+
+.btClose{
+	float: right;
+	color: #FFF;
+	font-size: 1.5em;
+	cursor: pointer;
+	margin: 2% 3% 0% 0%; /*top right bottom left*/
+}
+
+
+/*rodape*/
+
+.rodape{
+	padding-bottom: 53%;
+}
+
+.socialIcons{
+	width: 100%;
+}
+
+.socialIcons a{
+	font-size: 1.7em;
+	color: #FFF;
+	margin-right: 3%;
+	opacity: 0.7;
+}
+
+/*retirando a margem de 3% do ultimo link*/
+.socialIcons a:last-child{
+	margin-right: 0;
+}
+
+.socialIcons a:hover{
+	opacity: 1;
+}
+
+@media screen and (min-width: 450px){
+.btCadastro{
+	width: 45%;
+	padding: 2%;
+	font-size: 1.5em;
+}
+}
+
+@media screen and (min-width: 500px){
+
+.conteudoPrincipal .title h3{
+	font-size: 1.5em;
+
+}
+
+.conteudoPrincipal .title h1{
+	font-size: 2em;
+	
+}
+
+.conteudoPrincipal .title h2{
+	font-size: 1.6em;
+	
+}
+}
+
+@media screen and (min-width: 750px){
+.btCadastro{
+	width: 50%;
+	font-size: 2em;
+}
+
+.btLogin{
+	margin-right: 10%;
+}
+
+.register li{
+	font-size: 1.5em;
+}
+
+.btLogarInterno{
+	width: 257px;
+}
+}
+
+@media screen and (min-height: 640px){
+.rodape{
+	padding-bottom: 57%;
+}
+}
+
+@media screen and (min-height: 731px){
+.rodape{
+	padding-bottom: 66%;
+}
+}
+
+@media screen and (min-height: 812px){
+.rodape{
+	padding-bottom: 99%;
+}
+}
+
+
+@media screen and (min-height: 823px){
+.rodape{
+	padding-bottom: 88%;
+}
+}
+
+@media screen and (min-width: 950px){
+.buttons{
+	padding: 0 20%;
+}
+
+}
+
+@media screen and (min-width: 1300px){
+.buttons{
+	padding: 0 0;
+}
+
+.conteudoPrincipal{
+	padding: 0 0;
+}
+.conteudo{
+	width: 50%;
+	padding: 3% 4%;
+	float: right;
+}
+
+.btCadastro{
+	width: 40%;
+	font-size: 1.5em;
+	float: left;
+	margin-right: 2%;
+}
+
+
+.conteudoPrincipal .title h3{
+	text-align: left;
+
+}
+
+.conteudoPrincipal .title h1{
+	text-align: left;
+	font-size: 3em;
+	
+}
+
+.conteudoPrincipal .title h2{
+	font-size: 1.5em;
+	text-align: left;
+	
+}
+
+.rodape{
+	padding: 4.52% 0;
+}
+}
+
+@media screen and (min-width: 1388px){
+.btLogin{
+	display: none;
+}
+.menuTelaMaior{
+	display: flex;
+}
+}
