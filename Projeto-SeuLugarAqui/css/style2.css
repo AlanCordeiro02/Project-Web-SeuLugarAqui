@@ -10,7 +10,8 @@
 }
 
 body{
-	background-color: rgba(0,0,0, .9);
+	background: url(../imagens/Fundo3.jpg) center center no-repeat fixed;
+	background-size: cover;	
 
 }
 
@@ -36,6 +37,8 @@ input{
 	float: left;
 	padding: 3% 4%; /* espaços internos 3% para top e bottom e 4% para laterais*/
 	text-align: center;
+	background-color: rgba(0,0,0, .9);
+
 }
 
 .bgGradient{
@@ -53,6 +56,7 @@ input{
 .bgWhite{
 	background-color: #FFF;
 }
+
 
 .radius{
 	border-radius: 10px;
@@ -73,13 +77,51 @@ input{
 	width: 43px;
 	float: right;
 	border-radius: 43px;
-	background-color: #FFF;
+	background-color: #FF0000;
 	cursor: pointer;
 	text-align: center;
 	font-size: 1.5em;
 	display: ;
+	color: #FFF;
 
 }
+
+
+.register{
+	width: 100%;
+	height: 100%;
+	color: #FFF;
+	position: fixed;
+	background-color: rgba(0,0,0, .9);
+	top: 0;
+	left: 0;
+	display: none;
+
+}
+
+.register input{
+	font-weight: 300px;
+}
+
+.register li{
+	font-size: 1.2em;
+	padding: 1% 0;
+}
+
+.register a{
+	color: #FFF;
+}
+
+.register .textCadastrar{
+	margin-top: 10%;
+}
+
+.btLogarInterno{
+	width: 205px;
+	border-radius: 4px;
+	background-color: #FF0000; 
+	cursor: pointer;
+} 
 
 .btClose{
 	float: right;
@@ -117,8 +159,9 @@ input{
 	color:#FFF;
 }
 
-.menu .textCadastro{
+.menu .nameUser{
 	font-size: 1.5em;
+	color: #FF0000;
 
 }
 
@@ -137,9 +180,41 @@ input{
 	margin-top: 1%;
 }
 
+.menuTelaMaior{
+	width: 50%;
+	height: 100%;
+	color: #FFF;
+	padding: 0.5% 0%;
+	float: right;
+	display: none;
+
+}
+
+.menuTelaMaior li{
+	display: inline;
+	font-size: 1.2em;
+	padding: 0 6%;
+}
+
+.menuTelaMaior a{
+	color: #FFF;
+}
+
+.menuTelaMaior .user{
+	color: #FF0000;
+}
+
+/*campo de busca*/
+.search{
+	font-size: 1.2em;
+}
+
+.search i{
+	color: #FF0000;
+}
+
 /*conteudo principal*/
 .conteudoPrincipal{
-	background: url(../imagens/banner.png) center center no-repeat fixed;
 
 }
 
@@ -170,12 +245,14 @@ input{
 	font-size: 2em;
 	color: #000;
 	font-weight: bold;
+	color: #FF0000;
 }
 
 .conteudo .text h4{
 	font-size: 1.5em;
 	color: #000;
-	margin-top: 1%; 
+	margin-top: 1%;
+	color: #696969; 
 }
 
 .conteudo .text p{
@@ -183,6 +260,7 @@ input{
 	color: #000;
 	margin-top: 8%;
 	line-height: 20px; /*distancia entre linhas*/ 
+	color: #FFF;
 }
 
 
@@ -209,3 +287,88 @@ input{
 .socialIcons a:hover{
 	opacity: 1;
 }
+
+
+@media screen and (min-width: 321px) {
+/*conteudo pricipal*/
+.conteudo .text p{
+	text-align: center;
+	font-size: 1.1em;
+	
+	}
+}
+@media screen and (min-width: 590px){
+.search input{
+	width: 50%;
+}
+}
+
+
+@media screen and (min-width: 700px) {
+/*menu*/
+.btMenu{
+	height: 55px;
+	width: 55px;
+	border-radius: 55px;
+
+	}
+.logo {
+	margin-top: 0%;
+}
+
+
+.menu li{
+	font-size: 1.5em;
+	}
+
+/*campo de busca*/
+.search{
+	font-size: 1.4em;
+}	
+.search i{
+	color: 
+}	
+
+/*conteudo principal*/
+.conteudo{
+	display: flex;
+	}
+
+.conteudo img{
+	width: 300px;
+	}
+}
+
+@media screen and (min-width: 1100px) {
+
+/*conteudo principal*/
+.conteudo{
+	display: block;
+	text-align: center;
+	margin-right: 1%;
+	margin-bottom: 0%;
+	}
+
+.conteudo :last-child{
+	margin-right: 0;
+}
+
+.conteudoPrincipal{
+	display: flex;
+	}
+
+}
+
+@media screen and (min-width: 1388px) {
+
+/*menu*/
+.btMenu{
+	display: none;
+	}
+.menuTelaMaior{
+	display: flex;
+	}
+
+
+}
+

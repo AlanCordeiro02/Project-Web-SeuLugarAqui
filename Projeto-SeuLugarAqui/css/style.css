@@ -201,7 +201,12 @@ input{
 	font-weight: 300px;
 }
 
-.register li{
+.registerUser li{
+	font-size: 1.2em;
+	padding: 1% 0;
+}
+
+.registerCompany li{
 	font-size: 1.2em;
 	padding: 1% 0;
 }
@@ -215,6 +220,9 @@ input{
 }
 
 .registerUser .textCadastrar{
+	margin-top: 10%;
+}
+.registerCompany .textCadastrar{
 	margin-top: 10%;
 }
 
