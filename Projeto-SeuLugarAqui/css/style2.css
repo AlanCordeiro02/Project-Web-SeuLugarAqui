@@ -10,7 +10,7 @@
 }
 
 body{
-	background: url(../imagens/Fundo3.jpg) center center no-repeat fixed;
+	background: url(../imagens/Background.jpg) center center no-repeat fixed;
 	background-size: cover;	
 
 }
@@ -28,6 +28,7 @@ img{
 }
 input{
 	border-radius: 4px;
+	padding: 0 1%;
 }
 
 /*configuração padrão*/
@@ -101,6 +102,7 @@ input{
 
 .register input{
 	font-weight: 300px;
+	width: 50%;
 }
 
 .register li{
@@ -121,6 +123,7 @@ input{
 	border-radius: 4px;
 	background-color: #FF0000; 
 	cursor: pointer;
+	width: 50%;
 } 
 
 .btClose{
@@ -211,6 +214,7 @@ input{
 
 .search i{
 	color: #FF0000;
+	cursor: pointer;
 }
 
 /*conteudo principal*/
@@ -337,6 +341,31 @@ input{
 .conteudo img{
 	width: 300px;
 	}
+}
+
+@media screen and (min-width: 750px){
+
+.register li{
+	font-size: 1.5em;
+}
+.btLogarInterno{
+	width: 40%;
+}
+
+.register input{
+	width: 40%;
+}
+}
+
+@media screen and (min-width: 950px){
+.register input{
+	width: 30%;
+}
+
+.btLogarInterno{
+	width: 30%;
+}
+
 }
 
 @media screen and (min-width: 1100px) {
