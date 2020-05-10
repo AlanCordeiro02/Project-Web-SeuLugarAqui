@@ -118,6 +118,10 @@ input{
 	margin-top: 10%;
 }
 
+.registerEvents .textEvents{
+	margin-top: 10%;
+}
+
 .btLogarInterno{
 	width: 205px;
 	border-radius: 4px;
@@ -162,7 +166,7 @@ input{
 	color:#FFF;
 }
 
-.menu .nameUser{
+.menu .nameCompany{
 	font-size: 1.5em;
 	color: #FF0000;
 
@@ -175,7 +179,7 @@ input{
 
 
 .menuTelaMaior{
-	width: 50%;
+	width: 70%;
 	height: 100%;
 	color: #FFF;
 	padding: 0.5% 0%;
@@ -194,7 +198,7 @@ input{
 	color: #FFF;
 }
 
-.menuTelaMaior .user{
+.menuTelaMaior .company{
 	color: #FF0000;
 }
 

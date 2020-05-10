@@ -7,7 +7,7 @@
 		<title>SeuLugarAqui</title>
 		<meta name="description" content="SeuLugarAqui - Melhor site para encontrar lugares">
 		<meta name="robots" content="index">
-		<link rel="stylesheet" type="text/css" href="css/style2.css">
+		<link rel="stylesheet" type="text/css" href="css/style3.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Lato:400,300,700" rel="stylesheet" type="text/css">
 
@@ -24,7 +24,8 @@
 				<ul class="menu">
 					<buttom class="btClose"><i class="fa fa-times"></i></buttom>
 				
-					<li class="nameUser">NomeUsuario</li>
+					<li class="nameCompany">NomeEmpresa</li>
+					<li class="textUserCompany events"><a href="#">Cadastrar Eventos</a></li>
 					<li class="textUserCompany change"><a href="#">Alterar Informações</a></li>
 					<li class="textUserCompany"><a href="#">Sair</a></li>
 
@@ -33,14 +34,15 @@
 
 			<form action="" method="post">
 				<ul class="menuTelaMaior">
-					<li class="user">NomeUsuario</li>
+					<li class="company">NomeEmpresa</li>
+					<li class="events"><a href="#">Cadastrar Eventos</a></li>
 					<li class="change"><a href="#">Alterar Informações</a></li>
 					<li><a href="index.html">Sair</a></li>
 				</ul>
 			</form>
 
 			<form action="" method="post">
-				<ul class="register">
+				<ul class="register changeInfo">
 					<buttom class="btCloseUser btClose" href="#"><i class="fa fa-times"></i></buttom>
 							
 					<li class="textAlterar">Alterar Informações</li>
@@ -49,6 +51,23 @@
 					<li><input type="text" name="telefone" placeholder="Telefone"></li>
 					<li><input type="password" name="senha" placeholder="Senha"></li>
 					<li><button class="btLogarInterno"><a href="#">Alterar</a></button></li>
+
+				</ul>
+
+			</form>
+
+				<form action="" method="post">
+				<ul class="register registerEvents">
+					<buttom class="btCloseUser btClose" href="#"><i class="fa fa-times"></i></buttom>
+							
+					<li class="textEvents">Cadastrar Eventos</li>
+					<li><input type="text" name="nome" placeholder="Nome Evento"></li>
+					<li><input type="text" name="endereco" placeholder="Endereço"></li>
+					<li><input type="text" name="telefone" placeholder="Telefone"></li>
+					<li><input type="text" name="descricao" placeholder="Descrição"></li>
+					<li><input type="date" name="data" placeholder="Data"></li>
+					<li><input type="text" name="hora" placeholder="Hora"></li>
+					<li><button class="btLogarInterno"><a href="#">Cadastrar</a></button></li>
 
 				</ul>
 
@@ -130,11 +149,20 @@
 		</script>
 		<script>
 			$(".change").click(function(){
-				$(".register").show();
+				$(".changeInfo").show();
 			})
 
 			$(".btClose").click(function(){
-				$(".register").hide();
+				$(".changeInfo").hide();
+			})
+		</script>
+		<script>
+			$(".events").click(function(){
+				$(".registerEvents").show();
+			})
+
+			$(".btClose").click(function(){
+				$(".registerEvents").hide();
 			})
 		</script>
 
