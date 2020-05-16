@@ -63,14 +63,14 @@ input{
 	border-radius: 10px;
 }
 
-/*cabeçalho*/
+/*header*/
 
 .logo{
-	font-size:1.8em;
-	color: white;
+	width: 56px;
+	height: 56px;
+	background: url(../imagens/logoPequena.png) center center/30px no-repeat;
 	float: left;
-	padding: 0% 0%;	 
-	font-family: 'Roboto Mono';
+	padding: 0% 0%;	
 }
 
 .btMenu{
@@ -105,9 +105,15 @@ input{
 	width: 50%;
 }
 
+/*
+::-webkit-input-placeholder{
+	color:blue;
+	}
+*/
 .register li{
 	font-size: 1.2em;
 	padding: 1% 0;
+
 }
 
 .register a{
@@ -221,10 +227,6 @@ input{
 	margin-bottom: 5%;
 }
 
-.iconSearch{
-	color: #FFF;
-}
-
 .conteudo{
 	width: 100%;
 	text-align: left ;
@@ -296,15 +298,26 @@ input{
 	
 	}
 }
+
+@media screen and (min-width: 500px) {
+/*header*/
+.logo{
+	width: 250px;
+	height: 56px;
+	background: url(../imagens/logoGrande.png) center center/200px no-repeat;	
+	}
+}
+
 @media screen and (min-width: 590px){
+/*campo de busca*/
 .search input{
 	width: 50%;
-}
+	}
 }
 
 
 @media screen and (min-width: 700px) {
-/*menu*/
+/*header*/
 .btMenu{
 	height: 55px;
 	width: 55px;
@@ -313,8 +326,7 @@ input{
 	}
 .logo {
 	margin-top: 0%;
-}
-
+	}
 
 .menu li{
 	font-size: 1.5em;
@@ -323,10 +335,7 @@ input{
 /*campo de busca*/
 .search{
 	font-size: 1.4em;
-}	
-.search i{
-	color: 
-}	
+	}		
 
 /*conteudo principal*/
 .conteudo{
@@ -339,27 +348,28 @@ input{
 }
 
 @media screen and (min-width: 750px){
-
+/*header*/
 .register li{
 	font-size: 1.5em;
-}
+	}
 .btLogarInterno{
 	width: 40%;
-}
+	}
 
 .register input{
 	width: 40%;
-}
+	}
 }
 
 @media screen and (min-width: 950px){
+/*header*/
 .register input{
 	width: 30%;
-}
+	}
 
 .btLogarInterno{
 	width: 30%;
-}
+	}
 
 }
 
@@ -375,24 +385,21 @@ input{
 
 .conteudo :last-child{
 	margin-right: 0;
-}
+	}
 
 .conteudoPrincipal{
 	display: flex;
 	}
-
 }
 
 @media screen and (min-width: 1388px) {
 
-/*menu*/
+/*header*/
 .btMenu{
 	display: none;
 	}
 .menuTelaMaior{
 	display: flex;
 	}
-
-
 }
 

@@ -66,12 +66,14 @@ input{
 	border-radius: 10px;
 }
 
-/*cabeçalho*/
+/*header*/
 .logo{
-	font-size:1.8em;
-	color: white;
+	width: 56px;
+	height: 56px;
+	background: url(../imagens/logoPequena.png) center center/30px no-repeat;
 	float: left;
-	padding: 0% 0%;	 
+	padding: 0% 0%;	
+	
 }
 
 
@@ -268,142 +270,168 @@ input{
 	opacity: 1;
 }
 
+
+/*ajustes para diferentes tamanhos de tela*/
 @media screen and (min-width: 450px){
+/*conteudo principal*/	
 .btCadastro{
 	width: 45%;
 	padding: 2%;
 	font-size: 1.5em;
-}
+	}
 }
 
 @media screen and (min-width: 500px){
+/*header*/
+.logo{
+	width: 250px;
+	height: 56px;
+	background: url(../imagens/logoGrande.png) center center/200px no-repeat;	
+	}
+
+/*conteudo principal*/
 
 .conteudoPrincipal .title h3{
 	font-size: 1.5em;
 
-}
+	}
 
 .conteudoPrincipal .title h1{
 	font-size: 2em;
 	
-}
+	}
 
 .conteudoPrincipal .title h2{
 	font-size: 1.6em;
 	
-}
+	}
 }
 
 @media screen and (min-width: 750px){
-.btCadastro{
-	width: 50%;
-	font-size: 2em;
-}
+
+/*header*/
 
 .btLogin{
 	margin-right: 10%;
-}
+	}
+
+/*conteudo principal*/
+.btCadastro{
+	width: 50%;
+	font-size: 2em;
+	}
 
 .register li{
 	font-size: 1.5em;
-}
+	}
+
 .btLogarInterno{
 	width: 40%;
-}
+	}
 
 .register input{
 	width: 40%;
-}
+	}
 }
 
 @media screen and (min-height: 640px){
+
+/*rodape*/
 .rodape{
 	padding-bottom: 57%;
-}
+	}
 }
 
 @media screen and (min-height: 731px){
+/*rodape*/
 .rodape{
 	padding-bottom: 66%;
-}
+	}
 }
 
 @media screen and (min-height: 812px){
+/*rodape*/
 .rodape{
 	padding-bottom: 99%;
-}
+	}
 }
 
 
 @media screen and (min-height: 823px){
+/*rodape*/
 .rodape{
 	padding-bottom: 88%;
-}
+	}
 }
 
 @media screen and (min-width: 950px){
+/*conteudo principal*/
 .buttons{
 	padding: 0 20%;
-}
+	}
 .register input{
 	width: 30%;
-}
+	}
 
+/*header*/
 .btLogarInterno{
 	width: 30%;
-}
+	}
 
 }
 
 @media screen and (min-width: 1300px){
+/*conteudo principal*/
 .buttons{
 	padding: 0 0;
-}
+	}	
 
 .conteudoPrincipal{
 	padding: 0 0;
-}
+	}
 .conteudo{
 	width: 50%;
 	padding: 3% 4%;
 	float: right;
-}
+	}
 
 .btCadastro{
 	width: 40%;
 	font-size: 1.5em;
 	float: left;
 	margin-right: 2%;
-}
+	}
 
 
 .conteudoPrincipal .title h3{
 	text-align: left;
 
-}
+	}
 
 .conteudoPrincipal .title h1{
 	text-align: left;
 	font-size: 3em;
 	
-}
+	}
 
 .conteudoPrincipal .title h2{
 	font-size: 1.5em;
 	text-align: left;
 	
-}
+	}
 
+/*rodape*/
 .rodape{
 	padding: 4.52% 0;
-}
+	}
 }
 
 @media screen and (min-width: 1388px){
+/*header*/
 .btLogin{
 	display: none;
-}
+	}
 .menuTelaMaior{
 	display: flex;
-}
+	}
 }
