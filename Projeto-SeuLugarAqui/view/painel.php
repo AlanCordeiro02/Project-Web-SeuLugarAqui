@@ -1,3 +1,8 @@
+<?php
+session_start();
+include('../controller/verifica_login.php');
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -7,13 +12,14 @@
 		<title>SeuLugarAqui</title>
 		<meta name="description" content="SeuLugarAqui - Melhor site para encontrar lugares">
 		<meta name="robots" content="index">
-		<link rel="stylesheet" type="text/css" href="css/style2.css">
+		<link rel="stylesheet" type="text/css" href="../css/style2.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Lato:400,300,700" rel="stylesheet" type="text/css">
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<link rel="shortcut icon" href="../imagens/logoPequena.png" type="image/x-icon">
+		<link rel="icon" href="../imagens/logoPequena.png" type="image/x-icon">
 	
 	</head>
+
 	<body>
 		<!--tag especifica para cabeçalho-->
 		<header class="header container">
@@ -24,18 +30,18 @@
 				<ul class="menu">
 					<buttom class="btClose"><i class="fa fa-times"></i></buttom>
 				
-					<li class="nameUser">NomeUsuario</li>
+					<li class="nameUser">Olá, <?php echo $_SESSION['nome']; ?></li>
 					<li class="textUserCompany change"><a href="#">Alterar Informações</a></li>
-					<li class="textUserCompany"><a href="#">Sair</a></li>
+					<li class="textUserCompany"><a href="../controller/logout.php">Sair</a></li>
 
 				</ul>
 			</form>
 
 			<form action="" method="post">
 				<ul class="menuTelaMaior">
-					<li class="user">NomeUsuario</li>
+					<li class="user">Olá, <?php echo $_SESSION['nome']; ?></li>
 					<li class="change"><a href="#">Alterar Informações</a></li>
-					<li><a href="index.html">Sair</a></li>
+					<li><a href="../controller/logout.php">Sair</a></li>
 				</ul>
 			</form>
 
@@ -59,51 +65,48 @@
 
 		<!--campo de busca-->
 		<div class="search container">
-			<input type="text" name="" placeholder="Pesquise">
-			<i class="fa fa-search"></i>
+			<!--<input type="text" name="" placeholder="Pesquise">-->
+			<!--<i class="fa fa-search"></i>-->
+			<li><a href = "listas_eventos.php">Listar Eventos</a></li>
+			
 		</div>
 		<!--fim campo de busca-->
 
 		<!--tag especifica para conteudo principal-->
 		<main class="conteudoPrincipal container" >
+		
 			<article class="conteudo radius">
 
-				<img   src="imagens/Bares.jpg">
+				<img   src="../imagens/Bares.jpg">
 
 				<div class="text">
 					<h3>Bares<h3>
 					<h4>Todos os bares da região</h4>
-					<p>ca,calc,ac,ac,acpa,caplpalpdlaldpaldpal
-					dapdlapdlapdlapdlapdlapdlapdlapdlad
-					laldapdll</p>
+					<p>Listamos os melhores bares!</p>
 				</div>
 
 			</article>
 
 			<article class="conteudo  radius">
 
-				<img  src="imagens/Restaurantes.jpg">
+				<img  src="../imagens/Restaurantes.jpg">
 
 				<div class="text">
 					<h3>Restaurantes<h3>
 					<h4>Todos os restaurantes da região</h4>
-					<p>ca,calc,ac,ac,acpa,capl. palpdlaldpaldpal
-					dapdlapdlapdlapdlapdlapdlapdlapdlad
-					laldapdll</p>
+					<p>Encontre aqui os melhores restaurantes!</p>
 				</div>
 
 			</article>
 
 			<article class="conteudo radius">
 
-				<img src="imagens/Eventos.jpg" >
+				<img src="../imagens/Eventos.jpg" >
 
 				<div class="text">
 					<h3>Eventos<h3>
 					<h4>Todos os eventos da região</h4>
-					<p>ca,calc,ac,ac,acpa,caplpalpdlaldpaldpal
-					dapdlapdlapdlapdlapdlapdlapdlapdlad
-					laldapdll</p>
+					<p>As festas mais badaladas do momento!</p>
 				</div>
 
 			</article>
@@ -113,12 +116,13 @@
 		<!--tag especifica para rodape-->
 		<footer class="rodape container ">
 			<div class="socialIcons">
-				<a href=""><i class="fa fa-facebook"></i></a>
-				<a href=""><i class="fa fa-twitter"></i></a>
-				<a href=""><i class="fa fa-instagram"></i></a>
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-instagram"></i></a>
 			</div>
 		</footer>
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script>
 			$(".btMenu").click(function(){
 				$(".menu").show();
@@ -137,6 +141,7 @@
 				$(".register").hide();
 			})
 		</script>
-
+		
+	
 	</body>
 </html

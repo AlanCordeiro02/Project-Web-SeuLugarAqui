@@ -10,7 +10,7 @@
 }
 
 body{
-	background: url(../imagens/Background.jpg) center center no-repeat fixed;
+	background: url(../imagens/background.jpg) center center no-repeat fixed;
 	background-size: cover;	
 
 }
@@ -38,7 +38,6 @@ input{
 	float: left;
 	padding: 3% 4%; /* espaços internos 3% para top e bottom e 4% para laterais*/
 	text-align: center;
-	background-color: rgba(0,0,0, .9);
 
 }
 
@@ -68,7 +67,7 @@ input{
 .logo{
 	width: 56px;
 	height: 56px;
-	background: url(../imagens/logoPequena.png) center center/30px no-repeat;
+	background: url(../imagens/logoPequena.png) center center/50px no-repeat;
 	float: left;
 	padding: 0% 0%;	
 }
@@ -87,6 +86,11 @@ input{
 
 }
 
+#resultado {
+	font-size: 1.3em;
+	list-style: none;
+	color: #FF0000;
+}
 
 .register{
 	width: 100%;
@@ -132,6 +136,7 @@ input{
 	width: 205px;
 	border-radius: 4px;
 	background-color: #FF0000; 
+	color: #FFF;
 	cursor: pointer;
 	width: 50%;
 } 
@@ -149,7 +154,7 @@ input{
 	height: 100%;
 	color: #FFF;
 	position: fixed;
-	background-color: rgba(0,0,0);
+	background-color: rgba(0,0,0, .9);
 	top: 0;
 	left: 0;
 	display: none;
@@ -181,6 +186,7 @@ input{
 .menu .textUserCompany{
 	font-size: 1.2em;
 	margin-top: 1%;
+	cursor: pointer;
 }
 
 
@@ -210,12 +216,11 @@ input{
 
 /*campo de busca*/
 .search{
-	font-size: 1.2em;
+	font-size: 1.5em;
 }
 
-.search i{
+.search a{
 	color: #FF0000;
-	cursor: pointer;
 }
 
 /*conteudo principal*/
@@ -257,7 +262,7 @@ input{
 }
 
 .conteudo .text p{
-	font-size: 1em;
+	font-size: 1.2em;
 	color: #000;
 	margin-top: 8%;
 	line-height: 20px; /*distancia entre linhas*/ 
@@ -294,7 +299,7 @@ input{
 /*conteudo pricipal*/
 .conteudo .text p{
 	text-align: center;
-	font-size: 1.1em;
+	font-size: 1.3em;
 	
 	}
 }
@@ -305,13 +310,6 @@ input{
 	width: 250px;
 	height: 56px;
 	background: url(../imagens/logoGrande.png) center center/200px no-repeat;	
-	}
-}
-
-@media screen and (min-width: 590px){
-/*campo de busca*/
-.search input{
-	width: 50%;
 	}
 }
 
@@ -334,7 +332,7 @@ input{
 
 /*campo de busca*/
 .search{
-	font-size: 1.4em;
+	font-size: 2em;
 	}		
 
 /*conteudo principal*/
@@ -402,4 +400,3 @@ input{
 	display: flex;
 	}
 }
-

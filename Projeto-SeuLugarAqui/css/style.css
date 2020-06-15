@@ -10,7 +10,7 @@
 }
 
 body{
-	background: url(../imagens/Background.jpg) center center no-repeat fixed;
+	background: url(../imagens/background.jpg) center center no-repeat fixed;
 	background-size: cover;	
 
 }
@@ -38,7 +38,6 @@ input{
 	float: left;
 	padding: 3% 4%; /* espaços internos 3% para top e bottom e 4% para laterais*/
 	text-align: center;
-	background-color: rgba(0,0,0, .9);
 
 }
 
@@ -70,23 +69,23 @@ input{
 .logo{
 	width: 56px;
 	height: 56px;
-	background: url(../imagens/logoPequena.png) center center/30px no-repeat;
+	background: url(../imagens/logoPequena.png) center center/50px no-repeat;
 	float: left;
 	padding: 0% 0%;	
-	
 }
 
 
 .btLogin{
 	float: right;
 	height: 30px;
-	width: 60px;
+	width: 75px;
 	font-size: 1.5em;
 	border-radius: 4px;
 	background-color: #FF0000; 
 	color: #FFF;
 	margin-top: 1%;
 	display: ;
+	cursor: pointer;
 }
 
 .menuTelaMaior{
@@ -124,6 +123,7 @@ input{
 	width: 50%;
 	border-radius: 4px;
 	background-color: #FF0000; 
+	color: #FFF;
 	cursor: pointer;
 } 
 
@@ -134,7 +134,7 @@ input{
 /*conteudo principal*/
 
 .conteudoPrincipal{
-	background-color: rgba(0,0,0, .9);	
+
 
 }
 
@@ -224,9 +224,6 @@ input{
 	margin-top: 10%;
 }
 
-.register a{
-	color: #FFF;
-}
 
 .registerUser .textCadastrar{
 	margin-top: 10%;
@@ -244,11 +241,14 @@ input{
 }
 
 
-/*rodape*/
-
-.rodape{
-	padding-bottom: 53%;
+.notification {
+	font-size: 1.3em;
+	list-style: none;
+	color: #FF0000;
 }
+
+
+/*rodape*/
 
 .socialIcons{
 	width: 100%;
@@ -334,35 +334,6 @@ input{
 	}
 }
 
-@media screen and (min-height: 640px){
-
-/*rodape*/
-.rodape{
-	padding-bottom: 57%;
-	}
-}
-
-@media screen and (min-height: 731px){
-/*rodape*/
-.rodape{
-	padding-bottom: 66%;
-	}
-}
-
-@media screen and (min-height: 812px){
-/*rodape*/
-.rodape{
-	padding-bottom: 99%;
-	}
-}
-
-
-@media screen and (min-height: 823px){
-/*rodape*/
-.rodape{
-	padding-bottom: 88%;
-	}
-}
 
 @media screen and (min-width: 950px){
 /*conteudo principal*/
@@ -396,7 +367,7 @@ input{
 	}
 
 .btCadastro{
-	width: 40%;
+	width: 47%;
 	font-size: 1.5em;
 	float: left;
 	margin-right: 2%;
@@ -421,10 +392,10 @@ input{
 	}
 
 /*rodape*/
-.rodape{
+/*.rodape{
 	padding: 4.52% 0;
 	}
-}
+}*/
 
 @media screen and (min-width: 1388px){
 /*header*/
