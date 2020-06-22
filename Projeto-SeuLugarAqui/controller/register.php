@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('../model/conexao.php');
+include('../model/connection.php');
 
 $nome = mysqli_real_escape_string($conexao, trim($_POST['nome'])); //funcao trim retira o espaço da frente e de trás.
 $usuario = mysqli_real_escape_string($conexao, trim($_POST['usuario']));
@@ -14,11 +14,11 @@ $row = mysqli_num_rows($result);
 
 if($row > 0) {
     $_SESSION['usuario_existe'] = true;
-    header('Location: ../view/index2.php');
+    header('Location: ../view/index.php');
     exit;
 }
 else if( $nome == '' or $usuario == '' or $email == '' or $telefone == '' or $senha == ''){
-    header('Location: ../view/index2.php');
+    header('Location: ../view/index.php');
 }else{
     $sql = "INSERT INTO usuario (nome, usuario, email, telefone,senha, data_cadastro) 
     VALUES ('$nome', '$usuario', '$email', '$telefone','$senha', NOW())";
@@ -30,7 +30,7 @@ if($conexao->query($sql) === TRUE) {
 
 $conexao->close();
 
-header('Location: ../view/index2.php');
+header('Location: ../view/index.php');
 exit;
 
 ?>

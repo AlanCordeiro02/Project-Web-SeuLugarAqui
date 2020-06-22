@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>SeuLugarAqui</title>
-        <link rel="stylesheet" type="text/css" href="../css/styleFilter.css">
+        <link rel="stylesheet" type="text/css" href="../css/style_filter.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:400,300,700" rel="stylesheet" type="text/css">
         <link rel="shortcut icon" href="../imagens/logoPequena.png" type="image/x-icon">
         <link rel="icon" href="../imagens/logoPequena.png" type="image/x-icon">
@@ -13,7 +13,7 @@
     </head>
     <body>
         <div class="topo container">
-            <h1>Listas de Eventos</h1>
+            <h1>Lista de Eventos</h1>
         </div> 
         <table id="listar-eventos" class="display" style="width:100%">
             <thead>
@@ -35,7 +35,7 @@
             "processing": true,
             "serverSide": true,
             "ajax": {
-                "url": "../controller/pesquisa_evento.php",
+                "url": "../controller/search_event.php",
                 "type": "POST"
             }
             } );
@@ -44,7 +44,7 @@
     </script>
 
     <fooster class="rodape container">
-        <button class="btVoltar"><a href="painel_empresa.php">Voltar</a></button>
+        <button class="btVoltar"><a href="dashboard_company.php">Voltar</a></button>
     </fooster>
     </body>
 </html>

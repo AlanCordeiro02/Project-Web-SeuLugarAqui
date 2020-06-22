@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('../model/conexao.php');
+include('../model/connection.php');
 
 $nome_evento = mysqli_real_escape_string($conexao, trim($_POST['nome']));
 $endereco = mysqli_real_escape_string($conexao, trim($_POST['endereco']));
@@ -20,16 +20,16 @@ if($rowEmpresa != 0) {
 	
     VALUES ('$nome_evento','$endereco', '$telefone_empresa','$descricao','$dataEvento','$horaEvento')";
 	
-    header('Location: ../view/painel_empresa.php');
+    header('Location: ../view/dashboard_company.php');
 	
     
 }else{
-    header('Location: ../view/painel_empresa.php');
+    header('Location: ../view/dashboard_company.php');
 }
 
 if($conexao->query($sql) === TRUE) { 
     $_SESSION['status_cadastro'] = true;
-	header('Location: ../view/painel_empresa.php');
+	header('Location: ../view/dashboard_company.php');
 }
 else{
 	$_SESSION['erro_cadastro'] = true;
@@ -37,7 +37,7 @@ else{
 }
 
 $conexao->close();
-header('Location: ../view/painel_empresa.php');
+header('Location: ../view/dashboard_company.php');
 
 exit;
 

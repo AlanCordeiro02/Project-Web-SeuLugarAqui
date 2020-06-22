@@ -1,5 +1,5 @@
 <?php
-include('../model/conexao.php');
+include('../model/connection.php');
 
 $requestData= $_REQUEST;
 
@@ -58,28 +58,6 @@ $json_data = array(
 
 echo json_encode($json_data);  //enviar dados como formato json
 
-
-/*
-
-$nome_evento = filter_input(INPUT_POST, 'palavra', FILTER_SANITIZE_STRING);
-
-$result_user = "SELECT * FROM evento WHERE nome_evento LIKE '%$nome_evento%';";
-$resultado_user = mysqli_query($conexao, $result_user);
-
-if(($resultado_user) AND ($resultado_user->num_rows != 0 )){
-	while($row_user = mysqli_fetch_assoc($resultado_user)){
-		//$row_user = mysqli_fetch_assoc($resultado_user);
-		echo "<li>Nome: ".$row_user['nome_evento']."</li>";
-		echo "<li>Descrição: ".$row_user['descricao_evento']."</li>";
-		echo "<li>Endereço: ".$row_user['endereco_evento']."</li>";
-		echo "<li>Data: ".$row_user['data_evento']."</li>";
-		echo "<li>Hora: ".$row_user['hora_evento']."</li><br>";
-		
-	}
-}else{
-	echo "Sua pesquisa não retornou nenhum resultado ...";
-}
-*/
 
 
 ?>

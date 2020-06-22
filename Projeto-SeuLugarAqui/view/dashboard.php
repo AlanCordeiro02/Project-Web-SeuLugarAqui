@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('../controller/verifica_login.php');
+include('../controller/check_login.php');
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +12,7 @@ include('../controller/verifica_login.php');
 		<title>SeuLugarAqui</title>
 		<meta name="description" content="SeuLugarAqui - Melhor site para encontrar lugares">
 		<meta name="robots" content="index">
-		<link rel="stylesheet" type="text/css" href="../css/style2.css">
+		<link rel="stylesheet" type="text/css" href="../css/style_user.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Lato:400,300,700" rel="stylesheet" type="text/css">
 		<link rel="shortcut icon" href="../imagens/logoPequena.png" type="image/x-icon">
@@ -67,7 +67,7 @@ include('../controller/verifica_login.php');
 		<div class="search container">
 			<!--<input type="text" name="" placeholder="Pesquise">-->
 			<!--<i class="fa fa-search"></i>-->
-			<li><a href = "listas_eventos.php">Listar Eventos</a></li>
+			<li><a href = "list_events.php">Listar Eventos</a></li>
 			
 		</div>
 		<!--fim campo de busca-->
@@ -116,9 +116,9 @@ include('../controller/verifica_login.php');
 		<!--tag especifica para rodape-->
 		<footer class="rodape container ">
 			<div class="socialIcons">
-				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="https://www.facebook.com/Alancordeir0"><i class="fa fa-facebook"></i></a>
 				<a href="#"><i class="fa fa-twitter"></i></a>
-				<a href="#"><i class="fa fa-instagram"></i></a>
+				<a href="https://www.instagram.com/alancordeiro02"><i class="fa fa-instagram"></i></a>
 			</div>
 		</footer>
 

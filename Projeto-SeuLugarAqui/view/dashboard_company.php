@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('../controller/verifica_login_empresa.php');
+include('../controller/check_login_company.php');
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +12,7 @@ include('../controller/verifica_login_empresa.php');
 		<title>SeuLugarAqui</title>
 		<meta name="description" content="SeuLugarAqui - Melhor site para encontrar lugares">
 		<meta name="robots" content="index">
-		<link rel="stylesheet" type="text/css" href="../css/style3.css">
+		<link rel="stylesheet" type="text/css" href="../css/style_company.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Lato:400,300,700" rel="stylesheet" type="text/css">
 		<link rel="shortcut icon" href="../imagens/logoPequena.png" type="image/x-icon">
@@ -33,7 +33,7 @@ include('../controller/verifica_login_empresa.php');
 					<li class="nameCompany">Olá, <?php echo $_SESSION['nome_empresa']; ?></li>
 					<li class="textUserCompany events">Cadastrar Eventos</li>
 					<li class="textUserCompany change"><a href="#">Alterar Informações</a></li>
-					<li class="textUserCompany"><a href="../controller/logout_empresa.php">Sair</a></li>
+					<li class="textUserCompany"><a href="../controller/logout_company.php">Sair</a></li>
 
 				</ul>
 			</form>
@@ -43,7 +43,7 @@ include('../controller/verifica_login_empresa.php');
 					<li class="company">Olá, <?php echo $_SESSION['nome_empresa']; ?></li>
 					<li class="events"><a href="#">Cadastrar Eventos</a></li>
 					<li class="change"><a href="#">Alterar Informações</a></li>
-					<li><a href="../controller/logout_empresa.php">Sair</a></li>
+					<li><a href="../controller/logout_company.php">Sair</a></li>
 				</ul>
 			</form>
 
@@ -52,8 +52,9 @@ include('../controller/verifica_login_empresa.php');
 					<buttom class="btCloseUser btClose" href="#"><i class="fa fa-times"></i></buttom>
 							
 					<li class="textAlterar">Alterar Informações</li>
-					<li><input type="text" name="nome" placeholder="Nome Completo"></li>
+					<li><input type="text" name="nome" placeholder="Razão Social"></li>
 					<li><input type="text" name="email" placeholder="Email"></li>
+					<li><input type="text" name="endereco" placeholder="Endereço"></li>
 					<li><input type="text" name="telefone" placeholder="Telefone"></li>
 					<li><input type="password" name="senha" placeholder="Senha"></li>
 					<li><button class="btLogarInterno"><a href="#">Alterar</a></button></li>
@@ -62,7 +63,7 @@ include('../controller/verifica_login_empresa.php');
 
 			</form>
 
-				<form action="../controller/cadastrar_evento.php" method="POST">
+				<form action="../controller/register_event.php" method="POST">
 				<ul class="register registerEvents">
 					<buttom class="btCloseUser btClose" ><i class="fa fa-times"></i></buttom>
 							
@@ -85,7 +86,7 @@ include('../controller/verifica_login_empresa.php');
 		<!--campo de busca-->
 		<div class="search container">
 
-			<li><a href="listas_eventos_empresa.php">Listar Eventos</a></li>
+			<li><a href="list_events_company.php">Listar Eventos</a></li>
 		
 		</div>
 		<!--fim campo de busca-->
@@ -133,9 +134,9 @@ include('../controller/verifica_login_empresa.php');
 		<!--tag especifica para rodape-->
 		<footer class="rodape container ">
 			<div class="socialIcons">
-				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="https://www.facebook.com/Alancordeir0"><i class="fa fa-facebook"></i></a>
 				<a href="#"><i class="fa fa-twitter"></i></a>
-				<a href="#"><i class="fa fa-instagram"></i></a>
+				<a href="https://www.instagram.com/alancordeiro02"><i class="fa fa-instagram"></i></a>
 			</div>
 		</footer>
 

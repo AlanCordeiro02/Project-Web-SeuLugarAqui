@@ -10,8 +10,8 @@ session_start();
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>SeuLugarAqui</title>
 		<meta name="description" content="SeuLugarAqui - Melhor site para encontrar lugares">
-		<meta name="robots" content="index2">
-		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<meta name="robots" content="index">
+		<link rel="stylesheet" type="text/css" href="../css/style_index.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Lato:400,300,700" rel="stylesheet" type="text/css">
 		<link rel="shortcut icon" href="../imagens/logoPequena.png" type="image/x-icon">
@@ -103,7 +103,7 @@ session_start();
 
 
 
-					<form action="../controller/cadastrar.php" method="POST">	
+					<form action="../controller/register.php" method="POST">	
 						<ul class="registerUser register">
 
 							<buttom class="btCloseUser btClose" href="#"><i class="fa fa-times"></i></buttom>
@@ -118,7 +118,7 @@ session_start();
 
 						</ul>
 					</form>
-					<form action="../controller/cadastrar_empresa.php" method="post">	
+					<form action="../controller/register_company.php" method="post">	
 						<ul class="registerCompany register">
 
 							<buttom class="btCloseCompany btClose" href="#"><i class="fa fa-times"></i></buttom>
@@ -142,9 +142,9 @@ session_start();
 		<!--tag especifica para rodape-->
 		<footer class="rodape container ">
 			<div class="socialIcons">
-				<a href=""><i class="fa fa-facebook"></i></a>
-				<a href=""><i class="fa fa-twitter"></i></a>
-				<a href=""><i class="fa fa-instagram"></i></a>
+				<a href="https://www.facebook.com/Alancordeir0"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.instagram.com/alancordeiro02"><i class="fa fa-instagram"></i></a>
 			</div>
 		</footer>
 
